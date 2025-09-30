@@ -16,7 +16,6 @@
     html,body{height:100%;margin:0;background:linear-gradient(180deg,#071023 0%,#07111a 60%);color:#e6eef6}
     .container{max-width:var(--max-width);margin:40px auto;padding:28px}
 
-    /* Header */
     header{display:flex;align-items:center;justify-content:space-between;gap:18px}
     .brand{display:flex;gap:14px;align-items:center}
     .logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:700;color:white;box-shadow:0 6px 18px rgba(12,18,30,0.6)}
@@ -25,7 +24,6 @@
     .btn{background:linear-gradient(90deg,var(--accent1),var(--accent2));padding:10px 16px;border-radius:10px;color:white;border:none;cursor:pointer;font-weight:600;box-shadow:0 8px 30px rgba(7,18,40,0.6)}
     .ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:var(--muted);cursor:pointer}
 
-    /* Hero */
     .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;margin-top:26px}
     .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:26px;border-radius:18px;box-shadow:0 10px 30px rgba(4,8,16,0.6);border:1px solid rgba(255,255,255,0.03)}
 
@@ -36,38 +34,29 @@
     .stat{background:rgba(255,255,255,0.03);padding:10px 12px;border-radius:12px;min-width:110px;text-align:center}
     .stat strong{display:block;font-size:16px}
 
-    /* Curriculum */
     .curriculum h3{margin-top:0}
     .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
     .pill{background:rgba(255,255,255,0.02);padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.02);font-size:14px}
 
-    /* Right column */
     .side-hero{display:flex;flex-direction:column;gap:12px}
     .price{font-size:26px;font-weight:800}
     .small{color:var(--muted);font-size:13px}
-    .download{display:flex;gap:8px}
 
-    /* Features */
     .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
     .feature{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:18px;border-radius:12px}
     .feature h4{margin:0 0 8px}
 
-    /* Instructors */
     .instructors{display:flex;gap:12px;align-items:center;margin-top:16px}
     .avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(180deg,#fff2 0,#fff0);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
 
-    /* Footer */
     footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px;padding:16px}
 
-    /* Responsive */
     @media (max-width:980px){.hero{grid-template-columns:1fr;}.features{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.container{margin:18px;padding:16px}}
     @media (max-width:560px){.features{grid-template-columns:1fr}.nav{display:none}.headline{font-size:26px}}
 
-    /* micro-interactions */
     .btn:active{transform:translateY(1px)}
     a.cta{display:inline-block;text-decoration:none}
 
-    /* subtle animated background stripes */
     .herobg{position:absolute;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(120deg, rgba(124,58,237,0.04) 0%, rgba(6,182,212,0.03) 50%, transparent 60%)}
   </style>
 </head>
@@ -132,7 +121,7 @@
           </div>
           <div style="text-align:right">
             <div style="font-size:12px;color:var(--muted)">Publisher</div>
-            <div style="font-weight:700">All store</div>
+            <div style="font-weight:700">All Store</div>
           </div>
         </div>
 
@@ -145,18 +134,13 @@
           </ul>
         </div>
 
-        <div style="margin-top:12px;display:flex;gap:10px" class="download">
-          <button class="btn" id="downloadPart">Download (sample)</button>
-          <button class="ghost">Share</button>
-        </div>
-
         <div style="margin-top:14px">
           <div class="small">Instructors</div>
           <div class="instructors">
-            <div class="avatar">KE</div>
+            <div class="avatar">AS</div>
             <div>
-              <div style="font-weight:700">Kirill Eremenko</div>
-              <div style="color:var(--muted);font-size:13px">SuperDataScience</div>
+              <div style="font-weight:700">All Store</div>
+              <div style="color:var(--muted);font-size:13px">Education Team</div>
             </div>
           </div>
         </div>
@@ -214,7 +198,7 @@
 
     <section class="card" id="enroll" style="margin-top:22px;display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center">
       <h3 style="margin:0">Ready to start?</h3>
-      <p class="small">Download sample parts or enroll on your preferred platform. This package includes multiple downloadable parts and Python & R templates to get you building fast.</p>
+      <p class="small">Enroll now and get instant access to the full curriculum and resources.</p>
       <div style="display:flex;gap:10px">
         <button class="btn" id="enrollBtn">Enroll Now</button>
         <button class="ghost" id="contactBtn">Contact Support</button>
@@ -232,7 +216,6 @@
   </div>
 
   <script>
-    // small client-side interactions
     document.getElementById('previewBtn').addEventListener('click', ()=>{
       alert('Preview: Sample lesson will open. Replace this with your sample video or modal.');
     });
@@ -240,9 +223,6 @@
       window.location.href = 'https://www.udemy.com/';
     });
     document.getElementById('enrollTop').addEventListener('click', ()=>{document.getElementById('enroll').scrollIntoView({behavior:'smooth'});});
-    document.getElementById('downloadPart').addEventListener('click', ()=>{
-      alert('Download started (demo). Replace with real download links or signed URLs before deploying.');
-    });
     document.getElementById('contactBtn').addEventListener('click', ()=>{window.location.href='mailto:hello@example.com?subject=Course%20Inquiry'});
   </script>
 </body>

@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Machine Learning A-Z — AI, Python & R + ChatGPT Prize [2025]</title>
+  <meta name="description" content="Master Machine Learning with hands-on projects in Python & R. 42h, 386 lessons. Practical case-studies, NLP, Deep Learning, Reinforcement Learning and more." />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent1:#7c3aed; --accent2:#06b6d4; --muted:#9aa6b2; --glass: rgba(255,255,255,0.04);
+      --max-width:1100px;
+      --radius:14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071023 0%,#07111a 60%);color:#e6eef6}
+    .container{max-width:var(--max-width);margin:40px auto;padding:28px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:700;color:white;box-shadow:0 6px 18px rgba(12,18,30,0.6)}
+    h1.site{font-size:18px;margin:0}
+    .nav{display:flex;gap:12px;align-items:center}
+    .btn{background:linear-gradient(90deg,var(--accent1),var(--accent2));padding:10px 16px;border-radius:10px;color:white;border:none;cursor:pointer;font-weight:600;box-shadow:0 8px 30px rgba(7,18,40,0.6)}
+    .ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:var(--muted);cursor:pointer}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;margin-top:26px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:26px;border-radius:18px;box-shadow:0 10px 30px rgba(4,8,16,0.6);border:1px solid rgba(255,255,255,0.03)}
+
+    .headline{font-size:34px;line-height:1.02;margin:0 0 10px}
+    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);color:var(--accent2);font-weight:700;font-size:13px;margin-bottom:12px}
+    .lead{color:var(--muted);margin-bottom:16px}
+    .stats{display:flex;gap:12px;margin-top:16px}
+    .stat{background:rgba(255,255,255,0.03);padding:10px 12px;border-radius:12px;min-width:110px;text-align:center}
+    .stat strong{display:block;font-size:16px}
+
+    /* Curriculum */
+    .curriculum h3{margin-top:0}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .pill{background:rgba(255,255,255,0.02);padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.02);font-size:14px}
+
+    /* Right column */
+    .side-hero{display:flex;flex-direction:column;gap:12px}
+    .price{font-size:26px;font-weight:800}
+    .small{color:var(--muted);font-size:13px}
+    .download{display:flex;gap:8px}
+
+    /* Features */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+    .feature{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:18px;border-radius:12px}
+    .feature h4{margin:0 0 8px}
+
+    /* Instructors */
+    .instructors{display:flex;gap:12px;align-items:center;margin-top:16px}
+    .avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(180deg,#fff2 0,#fff0);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+
+    /* Footer */
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px;padding:16px}
+
+    /* Responsive */
+    @media (max-width:980px){.hero{grid-template-columns:1fr;}.features{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.container{margin:18px;padding:16px}}
+    @media (max-width:560px){.features{grid-template-columns:1fr}.nav{display:none}.headline{font-size:26px}}
+
+    /* micro-interactions */
+    .btn:active{transform:translateY(1px)}
+    a.cta{display:inline-block;text-decoration:none}
+
+    /* subtle animated background stripes */
+    .herobg{position:absolute;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(120deg, rgba(124,58,237,0.04) 0%, rgba(6,182,212,0.03) 50%, transparent 60%)}
+  </style>
+</head>
+<body>
+  <div class="herobg"></div>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">ML</div>
+        <div>
+          <h1 class="site">Machine Learning A‑Z</h1>
+          <div style="color:var(--muted);font-size:13px">AI · Python · R · ChatGPT Prize 2025</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="ghost">Curriculum</button>
+        <button class="ghost">Instructors</button>
+        <button class="btn" id="enrollTop">Enroll Now</button>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="card" style="position:relative;z-index:2;">
+        <span class="tag">Trusted by 900,000+ students</span>
+        <h2 class="headline">Master Machine Learning — Practical, Project-Based, Python & R</h2>
+        <p class="lead">Learn the most in-demand machine learning techniques (Regression, Classification, NLP, Deep Learning, Reinforcement Learning and more) with step-by-step explanations and real-world case studies. Choose Python, R — or both.</p>
+
+        <div class="stats">
+          <div class="stat"><small class="small">Lessons</small><strong>386</strong></div>
+          <div class="stat"><small class="small">Training</small><strong>42h 44m</strong></div>
+          <div class="stat"><small class="small">Level</small><strong>All levels</strong></div>
+        </div>
+
+        <div style="margin-top:18px;display:flex;gap:10px;align-items:center">
+          <a class="cta" href="#enroll"><button class="btn">Enroll Now — Start Learning</button></a>
+          <button class="ghost" id="previewBtn">Preview Sample Lesson</button>
+        </div>
+
+        <div class="curriculum" style="margin-top:18px">
+          <h3>Core curriculum (high level)</h3>
+          <div class="grid">
+            <div class="pill">Data Preprocessing</div>
+            <div class="pill">Regression (Linear, Polynomial, SVR, Trees)</div>
+            <div class="pill">Classification (Logistic, SVM, K-NN)</div>
+            <div class="pill">Clustering (K-Means, Hierarchical)</div>
+            <div class="pill">NLP & ChatGPT tools</div>
+            <div class="pill">Deep Learning (ANN, CNN)</div>
+            <div class="pill">Reinforcement Learning</div>
+            <div class="pill">Dimensionality Reduction (PCA, LDA)</div>
+            <div class="pill">Model Selection & XGBoost</div>
+          </div>
+        </div>
+
+      </section>
+
+      <aside class="card side-hero" style="z-index:2;align-self:start">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div class="price">Full Course Access</div>
+            <div class="small">42h • 386 Lessons • Python & R templates</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:12px;color:var(--muted)">Publisher</div>
+            <div style="font-weight:700">Udemy</div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px">
+          <div class="small">What you get</div>
+          <ul style="margin:8px 0 0 18px;color:var(--muted)">
+            <li>Downloadable Python & R code templates</li>
+            <li>Real-world case studies & projects</li>
+            <li>Subtitles (English) • 720p</li>
+          </ul>
+        </div>
+
+        <div style="margin-top:12px;display:flex;gap:10px" class="download">
+          <button class="btn" id="downloadPart">Download (sample)</button>
+          <button class="ghost">Share</button>
+        </div>
+
+        <div style="margin-top:14px">
+          <div class="small">Instructors</div>
+          <div class="instructors">
+            <div class="avatar">KE</div>
+            <div>
+              <div style="font-weight:700">Kirill Eremenko</div>
+              <div style="color:var(--muted);font-size:13px">SuperDataScience</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:10px;color:var(--muted);font-size:13px">Version 2025/3 • Updated curriculum • Minor lesson/duration changes</div>
+      </aside>
+
+    </main>
+
+    <section class="card" style="margin-top:22px">
+      <h3 style="margin-top:0">Why students love this course</h3>
+      <div class="features">
+        <div class="feature">
+          <h4>Project-based</h4>
+          <p class="small">Hands-on case studies let you build portfolio-ready projects as you learn.</p>
+        </div>
+        <div class="feature">
+          <h4>Python & R</h4>
+          <p class="small">Follow the language you need — or learn both for maximum flexibility.</p>
+        </div>
+        <div class="feature">
+          <h4>Clear explanations</h4>
+          <p class="small">Complex algorithms broken down to simple, intuitive steps.</p>
+        </div>
+        <div class="feature">
+          <h4>Advanced topics</h4>
+          <p class="small">NLP, Deep Learning, Reinforcement Learning, XGBoost and more.</p>
+        </div>
+        <div class="feature">
+          <h4>Downloadable code</h4>
+          <p class="small">Ready-to-run Python & R templates to speed up your projects.</p>
+        </div>
+        <div class="feature">
+          <h4>Career-focused</h4>
+          <p class="small">Build skills employers look for in data science roles.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:22px">
+      <h3 style="margin-top:0">Full high-level curriculum</h3>
+      <ol style="color:var(--muted)">
+        <li>Part 1 – Data Preprocessing</li>
+        <li>Part 2 – Regression (Linear, Multiple, Polynomial, SVR, Decision Tree, Random Forest)</li>
+        <li>Part 3 – Classification (Logistic, K-NN, SVM, Naive Bayes, Decision Tree, Random Forest)</li>
+        <li>Part 4 – Clustering (K-Means, Hierarchical)</li>
+        <li>Part 5 – Association Rules (Apriori, Eclat)</li>
+        <li>Part 6 – Reinforcement Learning (UCB, Thompson Sampling)</li>
+        <li>Part 7 – Natural Language Processing (Word models & algorithms)</li>
+        <li>Part 8 – Deep Learning (ANN, CNN)</li>
+        <li>Part 9 – Dimensionality Reduction (PCA, LDA, Kernel PCA)</li>
+        <li>Part 10 – Model Selection & Boosting (k-fold CV, tuning, XGBoost)</li>
+      </ol>
+    </section>
+
+    <section class="card" id="enroll" style="margin-top:22px;display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center">
+      <h3 style="margin:0">Ready to start?</h3>
+      <p class="small">Download sample parts or enroll on your preferred platform. This package includes multiple downloadable parts and Python & R templates to get you building fast.</p>
+      <div style="display:flex;gap:10px">
+        <button class="btn" id="enrollBtn">Enroll Now</button>
+        <button class="ghost" id="contactBtn">Contact Support</button>
+      </div>
+    </section>
+
+    <footer class="card" style="margin-top:22px">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div>
+          © 2025 Machine Learning A‑Z • Not affiliated with Udemy. This package is an educational offering including templates and materials.
+        </div>
+        <div style="color:var(--muted)">Need help? <a href="mailto:hello@example.com" style="color:var(--accent2);text-decoration:none">hello@example.com</a></div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // small client-side interactions
+    document.getElementById('previewBtn').addEventListener('click', ()=>{
+      alert('Preview: Sample lesson will open. Replace this with your sample video or modal.');
+    });
+    document.getElementById('enrollBtn').addEventListener('click', ()=>{
+      window.location.href = 'https://www.udemy.com/';
+    });
+    document.getElementById('enrollTop').addEventListener('click', ()=>{document.getElementById('enroll').scrollIntoView({behavior:'smooth'});});
+    document.getElementById('downloadPart').addEventListener('click', ()=>{
+      alert('Download started (demo). Replace with real download links or signed URLs before deploying.');
+    });
+    document.getElementById('contactBtn').addEventListener('click', ()=>{window.location.href='mailto:hello@example.com?subject=Course%20Inquiry'});
+  </script>
+</body>
+</html>

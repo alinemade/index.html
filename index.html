@@ -1,126 +1,1553 @@
-
 <!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
 <html lang="en">
+<!--<![endif]-->
+
+<!-- Head BEGIN -->
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Machine Learning A-Z: AI, Python & R + ChatGPT Prize </title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f4f6f8;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(135deg, #2c3e50, #34495e);
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 15px;
-    }
-    section {
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #2c3e50;
-      margin-bottom: 20px;
-      border-left: 5px solid #27ae60;
-      padding-left: 10px;
-    }
-    ul {
-      list-style: disc;
-      margin-left: 20px;
-      line-height: 1.8;
-    }
-    .cta {
-      text-align: center;
-      margin: 50px 0;
-    }
-    .cta button {
-      background: #27ae60;
-      color: #fff;
-      border: none;
-      padding: 15px 35px;
-      font-size: 1.1rem;
-      border-radius: 8px;
-      cursor: pointer;
-      margin: 10px;
-      transition: all 0.3s;
-    }
-    .cta button:hover {
-      background: #219150;
-      transform: scale(1.05);
-    }
-    footer {
-      background: #2c3e50;
-      color: #fff;
-      text-align: center;
-      padding: 25px;
-      margin-top: 60px;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>DZemploi - Find your dream job</title>
+<meta name="description" content="">
+<meta name="author" content="@therahul_gupta">
+<meta name="keywords" content="">
+
+<!-- Open Graph -->
+<meta property="og:title" content="DZemploi - Find your dream job"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://www.dzemploi.com/"/>
+<meta property="og:image" content=""/>
+<meta property="og:description" content=""/>
+
+<!-- twitter -->
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="www.dzemploi.com"/>
+<meta name="twitter:creator" content="@therahul_gupta"/>
+<meta name="twitter:title" content="DZemploi - Find your dream job"/>
+<meta name="twitter:url" content="https://www.dzemploi.com/"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:image" content=""/>
+
+      <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+  <!-- Fonts START -->
+  <link href="fonts/fonts.css" rel="stylesheet" type="text/css">
+  <!-- Fonts END -->
+
+  <!-- Global styles START -->          
+  <link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+
+  <!-- Global styles END --> 
+  <!-- Page level plugin styles START -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" rel="stylesheet">
+  <link href="assets/global/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/global/plugins/jquery-tags-input/jquery.tagsinput.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-select/bootstrap-select.min.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/global/plugins/select2/select2.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/global/plugins/jquery-multi-select/css/multi-select.css"/>
+  <link href="assets/global/plugins/carousel-owl-carousel/owl-carousel/owl.carousel.css" rel="stylesheet">
+  <!-- Page level plugin styles END -->
+
+    <!-- Theme styles START -->
+  <link href="assets/global/css/components.css" rel="stylesheet">
+  <link href="assets/frontend/layout/css/style.css" rel="stylesheet">
+  <link href="assets/frontend/layout/css/style-responsive.css" rel="stylesheet">
+  <link href="assets/frontend/layout/css/themes/red.css" rel="stylesheet" id="style-color">
+  <link href="assets/frontend/layout/css/custom.css" rel="stylesheet">
+  <link href="assets/global/plugins/bootstrap-toastr/toastr.min.css" rel="stylesheet" type="text/css" />
+  <!-- Theme styles END -->
 </head>
-<body>
-  <header>
-    <h1>Machine Learning A-Z: AI, Python & R + ChatGPT Prize [2025]</h1>
-    <p>Master Machine Learning step by step with Python, R, and hands-on projects.</p>
-  </header>
+<!-- Head END -->
 
-  <section>
-    <h2>What You’ll Learn</h2>
-    <ul>
-      <li>Data Preprocessing</li>
-      <li>Regression (Linear, Polynomial, Decision Tree, Random Forest, SVR)</li>
-      <li>Classification (Logistic Regression, K-NN, SVM, Naive Bayes, Decision Tree, Random Forest)</li>
-      <li>Clustering (K-Means, Hierarchical Clustering)</li>
-      <li>Association Rule Learning (Apriori, Eclat)</li>
-      <li>Reinforcement Learning (UCB, Thompson Sampling)</li>
-      <li>Natural Language Processing (text models and algorithms)</li>
-      <li>Deep Learning (ANNs, CNNs)</li>
-      <li>Dimensionality Reduction (PCA, LDA, Kernel PCA)</li>
-      <li>Model Selection & Boosting (cross-validation, tuning, XGBoost)</li>
-    </ul>
-  </section>
+<!-- Body BEGIN -->
+<body class="corporate">
 
-  <section>
-    <h2>Who This Course Is For</h2>
-    <ul>
-      <li>Anyone interested in machine learning and AI</li>
-      <li>Students with at least high school math knowledge</li>
-      <li>Beginners who want to start in ML or Data Science</li>
-      <li>Analysts and developers wanting to level up with ML skills</li>
-      <li>Business professionals looking to create value with AI</li>
-    </ul>
-  </section>
 
-  <section>
-    <h2>Course Details</h2>
-    <p><strong>Publisher:</strong> All Store</p>
-    <p><strong>Instructors:</strong> All Store</p>
-    <p><strong>Language:</strong> English</p>
-    <p><strong>Level:</strong> All levels</p>
-    <p><strong>Lessons:</strong> 386</p>
-    <p><strong>Duration:</strong> 42 hours and 44 minutes</p>
-  </section>
+    <style>
+div:not(#inline-badge) > .grecaptcha-badge {
+    display: none;
+}
+</style>
 
-  <div class="cta">
-    <button onclick="alert(' (: where your going ??!! lol')">Enroll Now</button>
-    <button onclick="alert('For previwe and sample contact me on IG')">Watch Preview</button>
-    <button onclick="alert('Instgrame=allstoredz')">Contact Us</button>
-  </div>
+<!-- BEGIN TOP BAR -->
+    <div class="pre-header hidden-print hidden-xs">
+        <div class="container">
+            <div class="row">
+                <!-- BEGIN TOP BAR LEFT PART -->
+                <div class="col-md-6 col-sm-6 additional-shop-info">
+                    <ul class="list-unstyled list-inline">
 
-  <footer>
-    <p>&copy; 2025 Machine Learning A-Z Course. All rights reserved.</p>
-  </footer>
-</body>
+
+                    </ul>
+                </div>
+                <!-- END TOP BAR LEFT PART -->
+                                <!-- BEGIN TOP BAR MENU -->
+                <div class="col-md-12 col-sm-12 additional-nav">
+
+                    <ul class="list-unstyled list-inline pull-right">
+                        <li>
+                                                        <div class="btn-group hidden">
+                                <a class="dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" data-delay="100" style="box-shadow: none;">
+                                    <img src="assets/images/png/in.png" style="vertical-align: inherit;" /> India
+                                </a>
+                                <ul class="dropdown-menu countrymenu" role="menu">
+                                  <li>
+                                      <div style="width:400px; padding: 10px;">
+                                          <div class="row">
+                                              <div class="col-md-6">
+                                                  <a href="javascript:;">
+                                                       <img src="assets/images/png/au.png" /> Australia
+                                                  </a>
+                                                  <a href="javascript:;">
+                                                       <img src="assets/images/png/be.png" /> België (Nederlands)
+                                                  </a>
+                                                  <a href="javascript:;">
+                                                       <img src="assets/images/png/be.png" /> Belgique (Français)
+                                                  </a>
+                                                  <a href="javascript:;">
+                                                       <img src="assets/images/png/ca.png" /> Canada
+                                                  </a>
+                                                  <a href="javascript:;">
+                                                       <img src="assets/images/png/de.png" /> Deutschland
+                                                  </a>
+                                                  <a  onclick="selectlang()" href="javascript:;">
+                                                       <img src="assets/images/png/fr.png" /> France
+                                                  </a>
+                                                  <a href="javascript:;">
+                                                       <img src="assets/images/png/in.png" /> India
+                                                  </a>
+                                                  <a href="javascript:;">
+                                                       <img src="assets/images/png/ir.png" /> Ireland
+                                                  </a>
+                                              </div>
+                                              <div class="col-md-6">
+                                                   <a href="javascript:;">
+                                                       <img src="assets/images/png/ne.png" /> Nederland
+                                                  </a>
+                                                  <a href="javascript:;">
+                                                       <img src="assets/images/png/at.png" /> Österreich
+                                                  </a>
+                                                  <a href="javascript:;">
+                                                       <img src="assets/images/png/ch.png" /> Schweiz (Deutsch)
+                                                  </a>
+                                                  <a href="javascript:;">
+                                                       <img src="assets/images/png/ch.png" /> Suisse (Français)
+                                                  </a>
+                                                  <a href="javascript:;">
+                                                       <img src="assets/images/png/gb.png" /> United Kingdom
+                                                  </a>
+                                                  <a href="javascript:;">
+                                                       <img src="assets/images/png/us.png" /> United States
+                                                  </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+
+                                </ul>
+                              </div>
+                        </li>
+
+                                                                        
+                                                <li>
+
+                                 <!-- <a href="recruiter-registration.php" style="font-size:14px;"> -->
+                                 <a href="all-solutions.php" style="font-size:14px;">
+                                    <i class="fa fa-users"></i>Employeurs / Recruteurs                                </a>
+                        </li>
+
+                        <li>
+                            <div class="btn-group">
+                                <a class="dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" data-delay="100" style="box-shadow: none;font-size:14px;">
+                                    <i class="fa fa-user"></i>  <script>alert(1)</script>                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                  <li>
+                                    <a href="dashboard.php">
+                                       <i class="icon-speedometer"></i> Tableau de bord                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="job-alerts.php">
+                                       <i class="icon-bell"></i> Alertes emplois                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="my-account.php">
+                                       <i class="icon-settings"></i>  Mes paramètres du compte                                    </a>
+                                  </li>
+                                  <li class="divider"></li>
+                                  <li>
+                                    <a href="index.php?logout">
+                                       <i class="icon-power"></i>  Déconnexion                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                        </li>
+                        <li style="text-align:left; padding:0px; width: 70px;">
+
+                                                                <div class="select-style">
+                                <select onchange="changeLanguage(this)" name="langSelection">
+                                  <option  value="en">English</option>
+                                  <option selected='selected' value="fr">Français</option>
+                                </select>
+                                </div>
+                        </li>
+                                            </ul>
+                </div>
+                <!-- END TOP BAR MENU -->
+                                            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+      function changeLanguage(e)
+      {
+        $("#lang").val(e.value);
+        document.langFrm.submit();
+
+      }
+
+    </script>
+    <form name="langFrm" id="langFrm" method="POST">
+      <input type="hidden" name="lang" id="lang">
+    </form>
+    <!-- END TOP BAR -->
+    <!-- BEGIN HEADER -->
+    <div class="header hidden-print">
+      <div class="container">
+        
+        <div class="header-mob">
+          <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+          <a class="site-logo" href="index.php"><img src="assets/images/logosmall.png" alt="Metronic FrontEnd"></a>
+
+          <div class="p-dropdown  visible-xs">
+            <a href="javascript:;" class="profile-box"><i class="fa fa-user"></i></a> 
+
+            <ul class="profile-menu">
+                              <li>
+                                <i class="fa fa-user"></i>
+                                <a href="javascript;" > <script>alert(1)</script> <script>alert(1)</script></a>
+                        </li>
+                                  <li>
+                                    <a href="dashboard.php">
+                                       <i class="icon-speedometer"></i> Tableau de bord                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="job-alerts.php">
+                                       <i class="icon-bell"></i> Alertes emplois                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="my-account.php">
+                                       <i class="icon-settings"></i>  Mes paramètres du compte                                    </a>
+                                  </li>
+                                  <li class="divider"></li>
+                                  <li>
+                                    <a href="index.php?logout">
+                                       <i class="icon-power"></i>  Déconnexion                                    </a>
+                                  </li>
+                          </ul>
+          </div>
+        </div> 
+
+                        <!-- BEGIN NAVIGATION -->
+                <div class="header-navigation pull-right font-transform-inherit">
+          <ul>
+            <li><a href="dashboard.php">Accueil</a></li>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                Trouver des emplois              </a>
+
+              <ul class="dropdown-menu">
+        <li><a href="browse-jobs.php"><b>Parcourir par:</b></a></li>
+                  <li><a href="browse-jobs.php#categories">Catégories</a></li>
+                  <li><a href="browse-jobs.php#company">Entreprise</a></li>
+                  <li><a href="browse-jobs.php#location">Emplacment</a></li>
+              </ul>
+            </li>
+
+            <li><a href="resume.php">Déposez votre CV</a></li>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                My DZemploi              </a>
+
+              <ul class="dropdown-menu">
+                <li><a href="dashboard.php">Tableau de bord</a></li>
+                <li><a href="recommended-jobs.php">Emplois recommandés</a></li>
+                <li><a href="resume.php">CVs</a></li>
+                <li><a href="saved-jobs.php">Emplois sauvegardés</a></li>
+                <li><a href="job-alerts.php">Gérer les alertes d'emploi</a></li>
+              </ul>
+            </li>
+            <li><a href="career-resources.php">Ressources</a></li>
+            <li style="" class="visible-xs">
+              <a href="recruiter-registration.php" style="font-size:14px;">
+                  <i class="fa fa-users"></i> Employeurs / Recruteurs              </a>
+
+            </li> 
+            <li style="text-align:left; padding:0px; width: 100px;" class="visible-xs">
+
+                                        <div class="select-style">
+                    <select onchange="changeLanguage(this)" name="langSelection">
+                      <option  value="en">English</option>
+                      <option selected='selected' value="fr">Français</option>
+                    </select>
+                  </div>
+            </li>
+          </ul>
+        </div>
+        <!-- END NAVIGATION -->
+                
+      </div>
+
+    </div>
+    <!-- Header END -->
+    <!-- responsive -->
+    <div class="modal fade" id="signin" tabindex="-1" role="basic" aria-hidden="true">
+        <div class="modal-dialog">
+         
+                <div class="modal-content login">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <a class="site-logo1" href="index.php"><img src="assets/images/logosmall.png" alt="Metronic FrontEnd"></a>
+                  </div>
+                  
+                    <div class="content">
+                                                 <!-- BEGIN LOGIN FORM -->
+                        <form id="login-l" class="login-form" action="" method="post">
+                                <h3 class="form-title">Connectez-vous à votre compte</h3>
+                                <div class="alert alert-danger display-hide">
+                                        <button class="close" data-close="alert"></button>
+                                        <span>
+                                        Entrez nimporte quel nom dutilisateur et mot de passe. </span>
+                                </div>
+                                <div class="form-group">
+                                        <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                                        <label class="control-label visible-ie8 visible-ie9">Email</label>
+                                        <div class="input-icon">
+                                                <i class="fa fa-user"></i>
+                                                <input class="form-control placeholder-no-fix" type="email" autocomplete="off" placeholder="Email" name="login_email" required />
+                                                <input type="hidden" id="captcha-token"  required />
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                        <label class="control-label visible-ie8 visible-ie9">Mot de passe</label>
+                                        <div class="input-icon">
+                                                <i class="fa fa-lock"></i>
+                                                <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Mot de passe" name="login_pass" required />
+                                        </div>
+                                </div>        
+                                <div class="form-group login_popup">        
+                                        <div id="inline-badge"></div>
+                                        </div>
+                                
+                                <div class="form-actions">
+                                        <label class="checkbox">
+                                        <input type="checkbox" class="uniform" name="remember" value="1"/>Rester connecté </label>
+                                        <button  name="login" class="btn green-haze pull-right">
+                                        Se connecter <i class="m-icon-swapright m-icon-white"></i>
+                                        </button>
+                                </div>
+                                <div class="text-center">
+                                    <img src="assets/images/294.GIF" id="login_loading" style="height: 15px;opacity: .5;display:none " />
+                                    <span class="text-danger" id="login_error"  style="display:none "> Informations de connexion invalide</span>
+                                                                        <span class="text-danger" id="captcha_error"  style="display:none "> Captcha invalide</span>
+                                </div>
+                                <hr class="no-top-space">
+                                <div class="login-options" style="text-align:center;">
+                                        <h4>Ou se connecter avec</h4>
+                                        <fb:login-button scope="public_profile,email" size="large" login_text="Login with facebook" onlogin="checkLoginState();"></fb:login-button>
+                                        <br><br>
+                                        <span class="text-danger" id="fberror"  style="display:none "></span>
+
+                                </div>
+                                <div class="forget-password">
+                                        <h4>Mot de passe oublié ?</h4>
+                                        <p>
+                                                 Pas de soucis, cliquez sur <a href="forgot-password.php" id="forget-password">
+                                                ici </a>
+                                                pour réinitialiser votre mot de passe.
+                                        </p>
+                                </div>
+                                <div class="create-account">
+                                        <p>
+                                                 Vous navez pas encore de compte ?&nbsp; <a href="register.php" id="register-btn">
+                                                 Créez un compte </a>
+                                        </p>
+                                </div>
+                        </form>
+                        <!-- END LOGIN FORM -->
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+</div>
+
+<script type='text/javascript'>
+function refreshCaptcha(){
+	var img = document.images['captchaimg'];
+	img.src = img.src.substring(0,img.src.lastIndexOf("?"))+"?rand="+Math.random()*1000;
+}
+</script>
+<script src="js/fblogin.js" ></script>
+
+        <!-- BEGIN SLIDER -->
+
+    <div class="recruiter-link">
+        <div class="recruiter-link-tab">
+        <a id="recuiting" href="recruiting.php">Vous recrutez?</a>
+        </div>
+    </div>
+    <div class="page-slider margin-bottom-40">
+
+     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+     <div class="carousel-inner" role="listbox">
+            <div class="item active">
+      <div class="fullwidthbanner-container mainbanner">
+          <div class="">
+              <div class="col-md-12">
+                  <div class="row" >
+            <div class="col-md-3">
+                  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="margin-top: 250px;margin-left: 20px;"></span>
+                  </a>
+            </div>
+            <div class="col-md-6">
+                <div class="search-container" role="search">
+                      <div class="search-header">
+                            <p class="search-header-sub">Commencez votre recherche maintenant ...</p>
+                            <h1 data-automation="homepage-search-title" class="search-header-main">Trouvez l'emploi idéal</h1>
+                      </div>
+                      <div class="search-area">
+                          <form method="get" action="jobsearch.php" >
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                          <div class="input-group">
+                                              <div class="input-group-addon"><i class="fa fa-search"></i></div>
+                                            <input type="text" name="keyword" class="form-control" placeholder="Mots- clés, titre de poste">
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                          <div class="input-group">
+                                              <div class="input-group-addon"><i class="fa fa-map-marker"></i></div>
+                                            <input type="text" name="loc" class="form-control" placeholder="Région">
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">Trouver un emploi</button>
+                                    </div>
+                                </div>
+                          </form>
+                      </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="margin-top: 250px;margin-right: 20px;"></span>
+                </a>
+            </div>
+        </div>
+              </div>
+          </div>
+      </div>
+      </div>
+           </div>
+      </div>
+
+
+
+        <div class="main">
+        <div class="fullwidthbanner-container quote-v2">
+        <!-- BEGIN BLOCKQUOTE BLOCK -->
+        <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <span>Parcourir par fonction et villes</span>
+          </div>
+          <div class="col-md-3 text-right">
+              <button type="button" class="btn btn-slide-toggle2" onclick="$(this).next().toggle();$(this).toggle(); $('#area2').slideToggle();">+</button>
+              <button type="button" class="btn btn-slide-toggle2 btn-slide-toggle3 " onclick="$(this).prev().toggle();$(this).toggle(); $('#area2').slideToggle();" style="display:none;">-</button>
+          </div>
+        </div>
+        </div>
+        </div>
+        <div class="fullwidthbanner-container quote-v2 quote-v3 "  id="area2"  style="display:none">
+        <!-- BEGIN BLOCKQUOTE BLOCK -->
+        <div class="container">
+
+
+          <div class="bs-example">
+            <div class="accordion" id="accordionExample">
+
+                <div class="row">
+                    <div class="card-header" id="headingOne" style="background:#B43F26;">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapsetwo" style="font-size:24px; color:white;"><i class="fa fa-plus" style="font-size:24px; color:white;"></i><strong style="margin-left:20px; color:white;">Catégorie</strong></button>
+                        </h2>
+                    </div>
+                    <div id="collapsetwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="col-md-4 city-and-cat-list" style="width:100%;">
+                                                                                        <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=1">Achats</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=2">Agriculture - Industrie Forestière - Pêche</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=3">Agro-alimentaire</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=4">Architecture - BTP</a><br/>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=5">Art - Créativité - Spectacles</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=6">Assurances</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=7">Automobile</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=8">Aéronautique - Défense</a><br/>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=9">Banque - Finance</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=10">Bois - Ameublement - Papier</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=11">Bénévolat - Associations</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=12">Commerce - Grande Distribution</a><br/>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=161">Commercial - Ventes</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=162">Comptabilité - Contrôle de gestion</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=163">Conseil - Expertise - Audit</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=164">Directeurs - Gérants</a><br/>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=165">Edition - Imprimerie</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=166">Electronique - Robotique</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=167">Enseignement - Formations</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=168">Immobilier</a><br/>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=169">Informatique - Télécom</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=171">Ingénieurs et Techniciens</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=172">Journalisme - Media - Publicité</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=173">Juristes - Fiscalistes</a><br/>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=174">Maintien de l'Ordre - Sécurité</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=175">Maritime - Nautisme - Naval</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=176">Marketing - Communication</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=177">Métallurgie - Sidérurgie - Plasturgie</a><br/>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=178">Production - Maintenance</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=179">Pétrole et Gaz - Mines - Energie</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=180">Qualité - Méthodes</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=181">Ressources Humaines</a><br/>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=182">Restauration</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=183">Santé</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=184">Sciences - Etudes - Recherche</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=185">Secrétariat - Assistance - Accueil</a><br/>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=186">Secteur Public</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=187">Services Conso - Centres d'Appels</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=188">Services sociaux</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=189">Soins du Corps - Beauté</a><br/>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=190">Sports - Loisirs</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=191">Textile - Habillement - Mode</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=192">Tourisme - Hôtellerie</a>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=193">Traduction - Documentation</a><br/>
+                                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?&category=194">Transports - Logistique</a>
+                                                                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card-header" id="headingOne" style="background:#B43F26;">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" style="font-size:24px; color:white;"><i class="fa fa-plus" style="font-size:24px; color:white;"></i><strong style="margin-left:20px;">Villes populaires</strong></button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                                                                <div class="col-md-4 city-and-cat-list" style="width:100%;">
+                                                                                                                                                        <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=ain defla">Ain defla</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, adrar">Algeria, adrar</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, aïn defla">Algeria, aïn defla</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, aïn defla ,aïn defla">Algeria, aïn defla ,aïn defla</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, aïn defla ,arib">Algeria, aïn defla ,arib</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, aïn defla ,khemis miliana">Algeria, aïn defla ,khemis miliana</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, aïn defla ,mekhatria">Algeria, aïn defla ,mekhatria</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, aïn defla ,miliana">Algeria, aïn defla ,miliana</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, aïn témouchent">Algeria, aïn témouchent</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, aïn témouchent ,tamzoura">Algeria, aïn témouchent ,tamzoura</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger">Algeria, alger</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,aïn benian">Algeria, alger ,aïn benian</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,aïn taya">Algeria, alger ,aïn taya</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,alger-centre">Algeria, alger ,alger-centre</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,bab el oued">Algeria, alger ,bab el oued</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,bab ezzouar">Algeria, alger ,bab ezzouar</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,baba hassen">Algeria, alger ,baba hassen</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,bachdjerrah">Algeria, alger ,bachdjerrah</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,baraki">Algeria, alger ,baraki</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,belouizdad">Algeria, alger ,belouizdad</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,ben aknoun">Algeria, alger ,ben aknoun</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,beni messous">Algeria, alger ,beni messous</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,bir mourad raïs">Algeria, alger ,bir mourad raïs</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,birkhadem">Algeria, alger ,birkhadem</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,birtouta">Algeria, alger ,birtouta</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,bordj el bahri">Algeria, alger ,bordj el bahri</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,bordj el kiffan">Algeria, alger ,bordj el kiffan</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,bouzareah">Algeria, alger ,bouzareah</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,cheraga">Algeria, alger ,cheraga</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,dar el beïda">Algeria, alger ,dar el beïda</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,dely ibrahim">Algeria, alger ,dely ibrahim</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,douera">Algeria, alger ,douera</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,draria">Algeria, alger ,draria</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,el achour">Algeria, alger ,el achour</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,el biar">Algeria, alger ,el biar</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,el harrach">Algeria, alger ,el harrach</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,el madania">Algeria, alger ,el madania</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,el marsa">Algeria, alger ,el marsa</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,gué de constantine">Algeria, alger ,gué de constantine</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,h&#039;raoua">Algeria, alger ,h&#039;raoua</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,hussein dey">Algeria, alger ,hussein dey</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,hydra">Algeria, alger ,hydra</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,khraicia">Algeria, alger ,khraicia</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,kouba">Algeria, alger ,kouba</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,les eucalyptus">Algeria, alger ,les eucalyptus</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,mahelma">Algeria, alger ,mahelma</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,mohammadia">Algeria, alger ,mohammadia</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,oued smar">Algeria, alger ,oued smar</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,ouled chebel">Algeria, alger ,ouled chebel</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,ouled fayet">Algeria, alger ,ouled fayet</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,rahmania">Algeria, alger ,rahmania</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,reghaïa">Algeria, alger ,reghaïa</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,rouïba">Algeria, alger ,rouïba</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,saoula">Algeria, alger ,saoula</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,sidi m&#039;hamed">Algeria, alger ,sidi m&#039;hamed</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,sidi moussa">Algeria, alger ,sidi moussa</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,souidania">Algeria, alger ,souidania</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,staoueli">Algeria, alger ,staoueli</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,tessala el merdja">Algeria, alger ,tessala el merdja</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, alger ,zeralda">Algeria, alger ,zeralda</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, annaba">Algeria, annaba</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, annaba ,annaba">Algeria, annaba ,annaba</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, annaba ,el bouni">Algeria, annaba ,el bouni</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, batna">Algeria, batna</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, batna ,barika">Algeria, batna ,barika</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, batna ,batna">Algeria, batna ,batna</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, batna ,djezar">Algeria, batna ,djezar</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, batna ,menaa">Algeria, batna ,menaa</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, batna ,merouana">Algeria, batna ,merouana</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, batna ,n&#039;gaous">Algeria, batna ,n&#039;gaous</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, batna ,oued chaaba">Algeria, batna ,oued chaaba</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, batna ,ouled fadel">Algeria, batna ,ouled fadel</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, béchar">Algeria, béchar</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, béchar ,béchar">Algeria, béchar ,béchar</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, béchar ,béni abbès">Algeria, béchar ,béni abbès</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, béjaïa">Algeria, béjaïa</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, béjaïa ,akbou">Algeria, béjaïa ,akbou</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, béjaïa ,amizour">Algeria, béjaïa ,amizour</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, béjaïa ,béjaïa">Algeria, béjaïa ,béjaïa</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, béjaïa ,beni maouche">Algeria, béjaïa ,beni maouche</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, béjaïa ,boudjellil">Algeria, béjaïa ,boudjellil</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, béjaïa ,darguina">Algeria, béjaïa ,darguina</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, béjaïa ,draâ el-kaïd">Algeria, béjaïa ,draâ el-kaïd</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, béjaïa ,el kseur">Algeria, béjaïa ,el kseur</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, béjaïa ,seddouk">Algeria, béjaïa ,seddouk</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, béjaïa ,sidi-aïch">Algeria, béjaïa ,sidi-aïch</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, béjaïa ,taskriout">Algeria, béjaïa ,taskriout</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, béjaïa ,timezrit">Algeria, béjaïa ,timezrit</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, biskra">Algeria, biskra</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, biskra ,aïn naga">Algeria, biskra ,aïn naga</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, biskra ,biskra">Algeria, biskra ,biskra</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, biskra ,foughala">Algeria, biskra ,foughala</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, biskra ,sidi okba">Algeria, biskra ,sidi okba</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, biskra ,tolga">Algeria, biskra ,tolga</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, blida">Algeria, blida</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, blida ,beni mered">Algeria, blida ,beni mered</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, blida ,beni tamou">Algeria, blida ,beni tamou</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, blida ,blida">Algeria, blida ,blida</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, blida ,boufarik">Algeria, blida ,boufarik</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, blida ,bougara">Algeria, blida ,bougara</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, blida ,bouinan">Algeria, blida ,bouinan</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, blida ,chebli">Algeria, blida ,chebli</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, blida ,chiffa">Algeria, blida ,chiffa</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, blida ,chréa">Algeria, blida ,chréa</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, blida ,el affroun">Algeria, blida ,el affroun</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, blida ,guerouaou">Algeria, blida ,guerouaou</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, blida ,meftah">Algeria, blida ,meftah</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, blida ,mouzaia">Algeria, blida ,mouzaia</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, blida ,ouled slama">Algeria, blida ,ouled slama</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, blida ,ouled yaïch">Algeria, blida ,ouled yaïch</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, blida ,soumaa">Algeria, blida ,soumaa</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, bordj bou arreridj">Algeria, bordj bou arreridj</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, bordj bou arreridj ,aïn taghrout">Algeria, bordj bou arreridj ,aïn taghrout</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, bordj bou arreridj ,bordj bou arreridj">Algeria, bordj bou arreridj ,bordj bou arreridj</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, bordj bou arreridj ,khelil">Algeria, bordj bou arreridj ,khelil</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, bordj bou arreridj ,mansoura">Algeria, bordj bou arreridj ,mansoura</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, bordj bou arreridj ,ras el oued">Algeria, bordj bou arreridj ,ras el oued</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, bouira">Algeria, bouira</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, bouira ,ahl el ksar">Algeria, bouira ,ahl el ksar</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, bouira ,bir ghbalou">Algeria, bouira ,bir ghbalou</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, bouira ,bouira">Algeria, bouira ,bouira</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, bouira ,el adjiba">Algeria, bouira ,el adjiba</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, bouira ,el asnam">Algeria, bouira ,el asnam</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, bouira ,el hachimia">Algeria, bouira ,el hachimia</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, bouira ,kadiria">Algeria, bouira ,kadiria</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, bouira ,lakhdaria">Algeria, bouira ,lakhdaria</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, bouira ,oued el berdi">Algeria, bouira ,oued el berdi</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, boumerdes">Algeria, boumerdes</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, boumerdes ,baghlia">Algeria, boumerdes ,baghlia</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, boumerdes ,bordj menaiel">Algeria, boumerdes ,bordj menaiel</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, boumerdes ,boudouaou">Algeria, boumerdes ,boudouaou</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, boumerdes ,boumerdes">Algeria, boumerdes ,boumerdes</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, boumerdes ,corso">Algeria, boumerdes ,corso</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, boumerdes ,hammedi">Algeria, boumerdes ,hammedi</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, boumerdes ,khemis el-khechna">Algeria, boumerdes ,khemis el-khechna</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, boumerdes ,ouled hedadj">Algeria, boumerdes ,ouled hedadj</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, boumerdes ,ouled moussa">Algeria, boumerdes ,ouled moussa</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, boumerdes ,zemmouri">Algeria, boumerdes ,zemmouri</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, chlef">Algeria, chlef</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, chlef ,chettia">Algeria, chlef ,chettia</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, chlef ,chlef">Algeria, chlef ,chlef</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, chlef ,harenfa">Algeria, chlef ,harenfa</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, chlef ,oued sly">Algeria, chlef ,oued sly</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, chlef ,ouled fares">Algeria, chlef ,ouled fares</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, chlef ,ténès">Algeria, chlef ,ténès</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, constantine">Algeria, constantine</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, constantine ,aïn smara">Algeria, constantine ,aïn smara</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, constantine ,constantine">Algeria, constantine ,constantine</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, constantine ,el khroub">Algeria, constantine ,el khroub</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, constantine ,ibn badis">Algeria, constantine ,ibn badis</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, djelfa">Algeria, djelfa</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, djelfa ,aïn oussara">Algeria, djelfa ,aïn oussara</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, djelfa ,birine">Algeria, djelfa ,birine</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, djelfa ,djelfa">Algeria, djelfa ,djelfa</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, el bayadh">Algeria, el bayadh</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, el oued">Algeria, el oued</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, el tarf">Algeria, el tarf</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, el tarf ,chebaita mokhtar">Algeria, el tarf ,chebaita mokhtar</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, el tarf ,el tarf">Algeria, el tarf ,el tarf</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, el tarf ,zerizer">Algeria, el tarf ,zerizer</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, ghardaïa">Algeria, ghardaïa</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, guelma">Algeria, guelma</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, guelma ,guelma">Algeria, guelma ,guelma</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, illizi">Algeria, illizi</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, jijel">Algeria, jijel</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, jijel ,el milia">Algeria, jijel ,el milia</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, jijel ,sidi maarouf">Algeria, jijel ,sidi maarouf</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, khenchela">Algeria, khenchela</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, khenchela ,khenchela">Algeria, khenchela ,khenchela</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, laghouat">Algeria, laghouat</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, laghouat ,laghouat">Algeria, laghouat ,laghouat</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, m&#039;sila">Algeria, m&#039;sila</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, m&#039;sila ,aïn el melh">Algeria, m&#039;sila ,aïn el melh</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, m&#039;sila ,bou-saâda">Algeria, m&#039;sila ,bou-saâda</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, m&#039;sila ,bouti sayah">Algeria, m&#039;sila ,bouti sayah</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, m&#039;sila ,el hamel">Algeria, m&#039;sila ,el hamel</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, m&#039;sila ,hammam dhalaa">Algeria, m&#039;sila ,hammam dhalaa</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, m&#039;sila ,m&#039;sila">Algeria, m&#039;sila ,m&#039;sila</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, m&#039;sila ,magra">Algeria, m&#039;sila ,magra</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, m&#039;sila ,sidi aïssa">Algeria, m&#039;sila ,sidi aïssa</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, mascara">Algeria, mascara</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, mascara ,mascara">Algeria, mascara ,mascara</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, médéa">Algeria, médéa</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, médéa ,beni slimane">Algeria, médéa ,beni slimane</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, médéa ,berrouaghia">Algeria, médéa ,berrouaghia</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, médéa ,médéa">Algeria, médéa ,médéa</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, mila">Algeria, mila</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, mila ,chelghoum laid">Algeria, mila ,chelghoum laid</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, mila ,mila">Algeria, mila ,mila</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, mostaganem">Algeria, mostaganem</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, mostaganem ,mostaganem">Algeria, mostaganem ,mostaganem</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, mostaganem ,sidi ali">Algeria, mostaganem ,sidi ali</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, naâma">Algeria, naâma</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, naâma ,mecheria">Algeria, naâma ,mecheria</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, oran">Algeria, oran</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, oran ,bethioua">Algeria, oran ,bethioua</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, oran ,bir el djir">Algeria, oran ,bir el djir</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, oran ,es senia">Algeria, oran ,es senia</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, oran ,hassi bounif">Algeria, oran ,hassi bounif</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, oran ,misserghin">Algeria, oran ,misserghin</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, oran ,oran">Algeria, oran ,oran</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, oran ,oued tlelat">Algeria, oran ,oued tlelat</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, oran ,sidi chami">Algeria, oran ,sidi chami</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, oran ,tafraoui">Algeria, oran ,tafraoui</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, ouargla">Algeria, ouargla</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, ouargla ,hassi messaoud">Algeria, ouargla ,hassi messaoud</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, ouargla ,ouargla">Algeria, ouargla ,ouargla</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, oum el-bouaghi">Algeria, oum el-bouaghi</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, oum el-bouaghi ,aïn béïda">Algeria, oum el-bouaghi ,aïn béïda</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, oum el-bouaghi ,aïn m&#039;lila">Algeria, oum el-bouaghi ,aïn m&#039;lila</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, oum el-bouaghi ,oum el bouaghi">Algeria, oum el-bouaghi ,oum el bouaghi</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, relizane">Algeria, relizane</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, relizane ,el hamadna">Algeria, relizane ,el hamadna</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, relizane ,ouarizane">Algeria, relizane ,ouarizane</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, relizane ,relizane">Algeria, relizane ,relizane</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, relizane ,sidi khettab">Algeria, relizane ,sidi khettab</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, relizane ,yellel">Algeria, relizane ,yellel</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, saïda">Algeria, saïda</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, sétif">Algeria, sétif</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, sétif ,aïn arnat">Algeria, sétif ,aïn arnat</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, sétif ,aïn azel">Algeria, sétif ,aïn azel</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, sétif ,aïn lahdjar">Algeria, sétif ,aïn lahdjar</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, sétif ,aïn oulmene">Algeria, sétif ,aïn oulmene</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, sétif ,beni aziz">Algeria, sétif ,beni aziz</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, sétif ,el eulma">Algeria, sétif ,el eulma</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, sétif ,guenzet">Algeria, sétif ,guenzet</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, sétif ,mezloug">Algeria, sétif ,mezloug</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, sétif ,sétif">Algeria, sétif ,sétif</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, sidi bel abbes">Algeria, sidi bel abbes</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, sidi bel abbes ,sfisef">Algeria, sidi bel abbes ,sfisef</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, sidi bel abbes ,sidi bel abbes">Algeria, sidi bel abbes ,sidi bel abbes</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, skikda">Algeria, skikda</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, skikda ,aïn bouziane">Algeria, skikda ,aïn bouziane</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, skikda ,collo">Algeria, skikda ,collo</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, skikda ,el harrouch">Algeria, skikda ,el harrouch</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, skikda ,filfila">Algeria, skikda ,filfila</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, skikda ,skikda">Algeria, skikda ,skikda</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, souk ahras">Algeria, souk ahras</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, souk ahras ,m&#039;daourouch">Algeria, souk ahras ,m&#039;daourouch</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, souk ahras ,oued keberit">Algeria, souk ahras ,oued keberit</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, souk ahras ,sedrata">Algeria, souk ahras ,sedrata</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, souk ahras ,souk ahras">Algeria, souk ahras ,souk ahras</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tamanrasset">Algeria, tamanrasset</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tamanrasset ,idles">Algeria, tamanrasset ,idles</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tamanrasset ,tamanrasset">Algeria, tamanrasset ,tamanrasset</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tébessa">Algeria, tébessa</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tébessa ,tébessa">Algeria, tébessa ,tébessa</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tiaret">Algeria, tiaret</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tiaret ,mahdia">Algeria, tiaret ,mahdia</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tiaret ,tiaret">Algeria, tiaret ,tiaret</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, timimoun">Algeria, timimoun</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tindouf">Algeria, tindouf</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tindouf ,tindouf">Algeria, tindouf ,tindouf</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tipaza">Algeria, tipaza</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tipaza ,ahmar el aïn">Algeria, tipaza ,ahmar el aïn</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tipaza ,bou ismaïl">Algeria, tipaza ,bou ismaïl</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tipaza ,cherchell">Algeria, tipaza ,cherchell</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tipaza ,damous">Algeria, tipaza ,damous</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tipaza ,fouka">Algeria, tipaza ,fouka</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tipaza ,khemisti">Algeria, tipaza ,khemisti</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tipaza ,koléa">Algeria, tipaza ,koléa</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tipaza ,sidi rached">Algeria, tipaza ,sidi rached</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tipaza ,tipaza">Algeria, tipaza ,tipaza</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tissemsilt">Algeria, tissemsilt</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tizi ouzou">Algeria, tizi ouzou</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tizi ouzou ,boghni">Algeria, tizi ouzou ,boghni</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tizi ouzou ,draâ ben khedda">Algeria, tizi ouzou ,draâ ben khedda</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tizi ouzou ,freha">Algeria, tizi ouzou ,freha</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tizi ouzou ,mâatkas">Algeria, tizi ouzou ,mâatkas</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tizi ouzou ,tigzirt">Algeria, tizi ouzou ,tigzirt</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tizi ouzou ,tizi ouzou">Algeria, tizi ouzou ,tizi ouzou</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tizi ouzou ,tizi rached">Algeria, tizi ouzou ,tizi rached</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tlemcen">Algeria, tlemcen</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tlemcen ,bensekrane">Algeria, tlemcen ,bensekrane</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tlemcen ,hennaya">Algeria, tlemcen ,hennaya</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tlemcen ,maghnia">Algeria, tlemcen ,maghnia</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, tlemcen ,remchi">Algeria, tlemcen ,remchi</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=algeria, touggourt">Algeria, touggourt</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=bir mourad rais">Bir mourad rais</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=blida">Blida</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=changhua city">Changhua city</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=djelfa">Djelfa</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=el aouana">El aouana</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=formosa">Formosa</a><br/>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=france, yvelines">France, yvelines</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=illizi">Illizi</a>
+                                                                                                                                                               <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?loc=khemis miliana">Khemis miliana</a>
+                                                                                   </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card-header" id="headingOne" style="background:#B43F26;">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapsethree" style="font-size:24px; color:white;"><i class="fa fa-plus" style="font-size:24px; color:white;"></i><strong style="margin-left:20px;">Compagnie</strong></button>
+                        </h2>
+                    </div>
+                    <div id="collapsethree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="col-md-4 city-and-cat-list" style="width:100%;">
+                                                                                <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?comp=">DZemploi</a>
+                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?comp=">DZemploi</a>
+                                                                                    <a style="color:white; font-size:14px; padding:0px; width:22%; margin-left:2%; display: inline-block;" href="jobsearch.php?comp=42">aaaaaa</a>
+                                                                </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- END BLOCKQUOTE BLOCK -->
+        </div>
+      </div>
+    </div>
+
+      <!--<div class="fullwidthbanner-container quote-v1">
+
+        <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <span>Êtes-vous un employeur?</span>
+          </div>
+          <div class="col-md-3 text-right">
+              <button type="button" class="btn btn-slide-toggle" onclick="$(this).next().toggle();$(this).toggle(); $('#area1').slideToggle();">+</button>
+              <button type="button" class="btn btn-slide-toggle btn-slide-toggle3 " onclick="$(this).prev().toggle();$(this).toggle(); $('#area1').slideToggle();" style="display:none;">-</button>
+          </div>
+        </div>
+        </div>
+      </div>-->
+
+      <!-- <div class="fullwidthbanner-container quote-v1 quote-v11"  id="area1" style="display:none">
+        <div class="container">
+        <div class="row margin-bottom-20">
+            <div class="col-md-4 text-center">
+                <i class="fa fa-suitcase employer--icon"></i>
+                <h3 class="employer--sub">Offre d'emploi</h3>
+                <p class="employer-text">Annoncez votre poste vacant en ligne pour atteindre les candidats les plus compétents pertinents à travers le pays.</p>
+                <a class="btn btn--ghost employer-cta employer-cta-scout" href="buy-jobs.php">En savoir plus</a>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fa fa-users employer--icon"></i>
+                <h3 class="employer--sub">Recherche de CV</h3>
+                <p class="employer-text">Une puissante base de données de CV vous aide à trouver les bons candidats.<br>&nbsp;</p>
+                <a class="btn btn--ghost employer-cta employer-cta-scout" href="cv-serach.php">En savoir plus</a>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fa fa-bullhorn employer--icon"></i>
+                <h3 class="employer--sub">Publicité d'entreprise</h3>
+                <p class="employer-text">La publicité sur DZEmploi vous donne l'avantage ultime de recrutement.<br>&nbsp;</p>
+                <a class="btn btn--ghost employer-cta employer-cta-scout" href="advertising.php">En savoir plus</a>
+            </div>
+        </div>
+
+        </div>
+      </div>  -->
+    </div>
+    <!-- END SLIDER -->
+
+    <div class="main">
+      <div class="container">
+        <!-- BEGIN CLIENTS -->
+        
+
+        <!-- BEGIN FEATURED JOBS -->
+        
+      </div>
+    </div>
+        <!-- END CLIENTS -->
+    <div class="main">
+        <div class="container">
+        <!-- BEGIN STEPS -->
+                <div class="row margin-bottom-40 front-steps-wrapper front-steps-count-3">
+          <div class="col-md-4 col-sm-4 front-step-col">
+            <div class="front-step front-step1">
+              <h2><i class="icon-user-follow"></i> Inscrivez-vous maintenant</h2>
+              <p>Inscrivez-gratuitement et augmenter vos chances de trouver un emploi.</p>
+              <button type="button" data-toggle="modal" href="#signin" class="btn btn-transparent btn-custom1">S’inscrire&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-angle-right"></i></button>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 front-step-col">
+            <div class="front-step front-step2">
+              <h2><i class="icon-bell"></i> Alertes emploi </h2>
+              <p>Recevez  chaque matin les dernières offres d'emploi par e-mail.</p>
+              <form method="post" id="newsletter" onsubmit="return applynewsletter()">
+              <div class="input-group">
+                    <input type="email" class="form-control" name="email" required placeholder="Votre e-mail">
+                    <span class="input-group-addon" onclick="$('#newsletter [name=submit]').click()">
+                      <i class="fa fa-angle-right"></i>
+                    </span>
+                    <button type="submit" class="hidden" name="submit"></button>
+              </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 front-step-col">
+            <div class="front-step front-step3">
+              <h2><i class="icon-cloud-upload"></i> télécharger votre CV</h2>
+              <p>Déposez votre CV et soyez visible par les recruteurs</p>
+                            <button type="button" class="btn btn-transparent btn-custom1" onclick="window.location='resume.php'">Télécharger&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-angle-right"></i></button>
+                          </div>
+          </div>
+        </div>
+                <!-- END STEPS -->
+        <!-- BEGIN LATEST NEWS -->
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2-1">Dernières nouvelles et conseils</h2>
+            </div>
+            <div class="col-md-12 margin-top-10 margin-bottom-20">
+
+                                <div class="row news-advice">
+                    <div class="col-md-3" style="height: 180px;overflow: hidden;">
+                        <img class="news-thumb" alt="Comment trouver votre premier emploi" src="croplive.php?size=230&url=blog/62166ec4033c9.png" />
+                    </div>
+                    <div class="col-md-9">
+                        <span class="news-advice-date">Date postée: <time> February 23, 2022</time></span>
+                        <h3  class="news-advice-title"><a href="post-item.php?id=11">Comment trouver votre premier emploi</a></h3>
+                        <p  class="news-advice-description">
+                             Obtenir un emploi en n&rsquo;ayant aucune exp&eacute;rience est pour le moins difficile, mais pas impossible. Vous avez besoin d&#39;exp&eacute;rience pour trouver un emploi et vous avez besoin d&rsquo;un emploi pour acqu&eacute;rir de l&#39;exp&eacute;rience. Vous avez l&rsquo;impression que c&rsquo;est un cercle vicieux qui n&...                             <a href="post-item.php?id=11">Lire la suite</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                </div>
+                                <div class="row news-advice">
+                    <div class="col-md-3" style="height: 180px;overflow: hidden;">
+                        <img class="news-thumb" alt="Les recruteurs ne passeraient que 34 secondes à survoler votre CV" src="croplive.php?size=230&url=blog/62166a24265aa.png" />
+                    </div>
+                    <div class="col-md-9">
+                        <span class="news-advice-date">Date postée: <time> February 23, 2022</time></span>
+                        <h3  class="news-advice-title"><a href="post-item.php?id=9">Les recruteurs ne passeraient que 34 secondes à survoler votre CV</a></h3>
+                        <p  class="news-advice-description">
+                             Vous &ecirc;tes-vous d&eacute;j&agrave; demand&eacute;, en pleine r&eacute;daction de CV,&nbsp;combien de temps celui-ci allait-il v&eacute;ritablement &ecirc;tre examin&eacute; par la personne &agrave; qui vous l&rsquo;enverrez ? Selon une &eacute;tude men&eacute;e par Tilkee en 2019, une start-up sp&eacute;cialis&eacute;e dans...                             <a href="post-item.php?id=9">Lire la suite</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                </div>
+                                <div class="row news-advice">
+                    <div class="col-md-3" style="height: 180px;overflow: hidden;">
+                        <img class="news-thumb" alt="Interview advice" src="croplive.php?size=230&url=blog/5e6118a3b0211.jpg" />
+                    </div>
+                    <div class="col-md-9">
+                        <span class="news-advice-date">Date postée: <time> April 02, 2016</time></span>
+                        <h3  class="news-advice-title"><a href="post-item.php?id=4">Interview advice</a></h3>
+                        <p  class="news-advice-description">
+                             Your CV and/or your cover letter has already impressed the recruiter. The next (and the most) important step to get the job, is to make a great impression in your initial interview. The following tips will help you in your preparation and improve your performance and create the best impression that you can.
+Preparation
+The key...                             <a href="post-item.php?id=4">Lire la suite</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                </div>
+                
+
+
+            </div>
+        </div>
+        <!-- END LATEST NEWS -->
+
+      </div>
+    </div>
+
+        <!-- BEGIN PRE-FOOTER -->
+    <div class="pre-footer hidden-print">
+      <div class="container">
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+              <h2> DZemploi</h2>
+              <ul class="list-unstyled">
+                  <li><a href="about-us.php">À propos de nous</a></li>
+                  <li><a href="contact-us.php">Contactez nous</a></li>
+                  <li><a href="sitemap.php">Carte du site</a></li>
+                  <!--<li><a href="work-at.php">Travailler pour nous</a></li>-->
+              </ul>
+          </div>
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+              <h2>Candidat</h2>
+              <ul class="list-unstyled">
+
+                                    <li><a data-toggle="modal" href="#signin">Connexion candidat</a></li>
+                  
+                  <li><a href="recruter-faq.php">FAQ</a></li>
+                  <li><a href="privacy.php">Confidentialité</a></li>
+                  <li><a href="terms.php">Termes & Conditions</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+              <h2>Recruteur</h2>
+              <ul class="list-unstyled">
+
+
+
+                                        <li><a data-toggle="modal" href="#signin">Publier des emplois</a></li>
+                    
+
+
+
+                                        <li><a data-toggle="modal" href="#signin">Rechercher des CV</a></li>
+                    
+                                        <li><a data-toggle="modal" href="#signin">Publicité</a></li>
+                                  </ul>
+          </div>
+
+
+
+
+      </div>
+    </div>
+    <!-- END PRE-FOOTER -->
+
+    <!-- BEGIN FOOTER -->
+    <div class="footer hidden-print">
+      <div class="container">
+        <div class="row">
+          <!-- BEGIN COPYRIGHT -->
+          <div class="col-md-6 col-sm-6 padding-top-10">
+            Copyright © 2012-2025 <a href="/"> DZemploi.com</a> tous droits réservés, reproduction interdite.<a href="terms.php">Conditions d'utilisation</a>
+          </div>
+          <!-- END COPYRIGHT -->
+          <!-- BEGIN PAYMENTS -->
+          <div class="col-md-6 col-sm-6">
+            <ul class="social-footer list-unstyled list-inline pull-right">
+              <li><a href="https://www.facebook.com/algeriemploi/?eid=ARDHW5cDCe_G_xLe5B40DJ3BrC36Ibtu5g18M5McKMP1zYjL-J4kCf74eJqPDTuVkR0z9Cvsfg7WVLhW" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://web.facebook.com/TheDummyPage/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="https://web.facebook.com/TheDummyPage/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://web.facebook.com/TheDummyPage/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+          </div>
+          <!-- END PAYMENTS -->
+        </div>
+      </div>
+    </div>
+    <!-- END FOOTER -->
+
+    <!-- Load javascripts at bottom, this will reduce page load time -->
+<!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+<!--[if lt IE 9]>
+<script src="assets/global/plugins/respond.min.js"></script>
+<![endif]-->
+
+<script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="assets/frontend/layout/scripts/back-to-top.js" type="text/javascript"></script>
+<script src="assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-toastr/toastr.min.js"></script>
+
+<script src="js/script.js"></script>
+<!-- END CORE PLUGINS -->
+
+
+<!-- BEGIN CORE SCRIPTS-->
+<script>
+
+    setTimeout(function() {
+        $(".alert-dismissable").slideUp()
+    }, 3000);
+
+    function selectlang() {
+        //$(".goog-te-combo").hide();
+        $('.goog-te-combo option').filter(function() {
+            return ($(this).text() == 'French'); //To select Blue
+        }).prop('selected', true);
+
+        $('.goog-te-combo').trigger("onchange")
+
+    }
+
+    function isNumberKey(evt) {
+        var charCode = (evt.which) ? evt.which : evt.keyCode
+        if (charCode > 31 && (charCode < 48 || charCode > 57)){
+            alert("Number Only! Charecter not allowed");
+            return false;
+
+        }
+        return true;
+    }
+
+</script>
+<style>
+    .goog-logo-link{
+        display:none;
+    }
+    .goog-te-combo{
+        width: 131px;
+    }
+    .goog-te-gadget{
+        width: 132px;
+        overflow-x: hidden;
+    }
+    #google_translate_element{
+        display:inline-table;
+    }
+</style>
+<style>
+.modal{
+      z-index: 9999999 !important;
+}
+.modal-backdrop{
+      z-index: 99999 !important;
+}
+</style>
+<!-- END CORE SCRIPTS-->
+
+
+<script type="text/javascript">
+  jQuery('.p-dropdown').click(function() {
+      jQuery(this).toggleClass('show');
+      jQuery('.profile-menu').toggleClass('show');
+      jQuery('body').toggleClass('menushow');
+  });
+</script>    <!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
+    <script src="assets/global/plugins/jquery-tags-input/jquery.tagsinput.min.js" type="text/javascript"></script>
+    <script src="js/dropdown.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/global/plugins/bootstrap-select/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="assets/global/plugins/select2/select2.min.js"></script>
+    <script type="text/javascript" src="assets/global/plugins/jquery-multi-select/js/jquery.multi-select.js"></script>
+    <script src="assets/global/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
+    <script src="assets/global/plugins/carousel-owl-carousel/owl-carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
+    <link href="assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+    <script src="assets/frontend/layout/scripts/layout.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            Layout.init();
+            Layout.initOWL();
+            Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
+            Layout.initNavScrolling();
+
+        });
+
+
+    </script>
+    <!-- END PAGE LEVEL JAVASCRIPTS -->
+
+
+<div class="modal fade bs-example-modal-lg" id="newsletetrmod" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></buttxon>
+        <h4 class="modal-title"></h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+        <div class="col-md-12">
+            <form class="form-horizontal" action="index.php" method="post" role="form">
+
+                <div class="form-body">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Région</label>
+                                <div class="col-md-9">
+                                        <input type="text" class="form-control" name="location" id="location" placeholder="City Province">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Catégorie</label>
+                                <div class="col-md-9">
+                                    <div class="checkbox-list">
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="1" class="uniform"> Achats </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="2" class="uniform"> Agriculture - Industrie Forestière - Pêche </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="3" class="uniform"> Agro-alimentaire </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="4" class="uniform"> Architecture - BTP </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="5" class="uniform"> Art - Créativité - Spectacles </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="6" class="uniform"> Assurances </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="7" class="uniform"> Automobile </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="8" class="uniform"> Aéronautique - Défense </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="9" class="uniform"> Banque - Finance </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="10" class="uniform"> Bois - Ameublement - Papier </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="11" class="uniform"> Bénévolat - Associations </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="12" class="uniform"> Commerce - Grande Distribution </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="161" class="uniform"> Commercial - Ventes </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="162" class="uniform"> Comptabilité - Contrôle de gestion </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="163" class="uniform"> Conseil - Expertise - Audit </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="164" class="uniform"> Directeurs - Gérants </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="165" class="uniform"> Edition - Imprimerie </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="166" class="uniform"> Electronique - Robotique </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="167" class="uniform"> Enseignement - Formations </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="168" class="uniform"> Immobilier </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="169" class="uniform"> Informatique - Télécom </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="171" class="uniform"> Ingénieurs et Techniciens </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="172" class="uniform"> Journalisme - Media - Publicité </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="173" class="uniform"> Juristes - Fiscalistes </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="174" class="uniform"> Maintien de l'Ordre - Sécurité </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="175" class="uniform"> Maritime - Nautisme - Naval </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="176" class="uniform"> Marketing - Communication </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="177" class="uniform"> Métallurgie - Sidérurgie - Plasturgie </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="178" class="uniform"> Production - Maintenance </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="179" class="uniform"> Pétrole et Gaz - Mines - Energie </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="180" class="uniform"> Qualité - Méthodes </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="181" class="uniform"> Ressources Humaines </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="182" class="uniform"> Restauration </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="183" class="uniform"> Santé </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="184" class="uniform"> Sciences - Etudes - Recherche </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="185" class="uniform"> Secrétariat - Assistance - Accueil </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="186" class="uniform"> Secteur Public </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="187" class="uniform"> Services Conso - Centres d'Appels </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="188" class="uniform"> Services sociaux </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="189" class="uniform"> Soins du Corps - Beauté </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="190" class="uniform"> Sports - Loisirs </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="191" class="uniform"> Textile - Habillement - Mode </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="192" class="uniform"> Tourisme - Hôtellerie </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="193" class="uniform"> Traduction - Documentation </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="category[]" value="194" class="uniform"> Transports - Logistique </label>
+                                                                            </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Type d'emploi</label>
+                                <div class="col-md-9">
+                                    <div class="checkbox-list">
+                                                                                    <label>
+                                            <input type="checkbox" name="type[]" value="13" class="uniform"> Temps plein </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="type[]" value="14" class="uniform"> Contrat </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="type[]" value="15" class="uniform"> Temps partiel </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="type[]" value="16" class="uniform"> Stage </label>
+                                                                                    <label>
+                                            <input type="checkbox" name="type[]" value="17" class="uniform"> Intérimaire </label>
+                                                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Mots clés</label>
+                                <div class="col-md-9">
+                                        <input id="tags_1" type="text" name="keywords" class="form-control tags" value=""/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Profession</label>
+                                <div class="col-md-9">
+                                        <input type="text" name="title" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Company</label>
+                                <div class="col-md-9">
+                                        <select class="form-control select2me" name="company" id="selectitem5" multiple data-placeholder="Select">
+                                                <option value=""></option>
+                                                                                                <option value="">DZemploi</option>
+                                                                                                <option value="">DZemploi</option>
+                                                                                                <option value="42">aaaaaa</option>
+                                                                                        </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Email</label>
+                                <div class="col-md-9">
+                                        <input type="text" class="form-control" id="newsletter_email" name="email" value=""  placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">d'alerte d'emploi</label>
+                                <div class="col-md-9">
+                                        <div class="radio-list">
+                                                <label>
+                                                <input type="radio" name="frequency" value="1" class="uniform" checked>Du quotidien </label>
+                                                <label>
+                                                <input type="radio" name="frequency" value="2" class="uniform">Hebdomadaire  </label>
+                                                <label>
+                                                <input type="radio" name="frequency" value="3" class="uniform">Bihebdomadaire  </label>
+                                                <label>
+                                                <input type="radio" name="frequency" value="4" class="uniform">Mensuel  </label>
+                                                <label>
+                                                <input type="radio" name="frequency" value="5" class="uniform">Jamais </label>
+                                        </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form-actions fluid hidden">
+                  <div class="col-md-offset-1 col-md-5">
+                    <button type="submit" name="alert_submit" id="alert_submit" class="btn green">Save Alert</button>
+<!--                            <button type="submit" name="search" class="btn default">Run Search</button>-->
+                  </div>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        <button type="button" onclick="$('#alert_submit').click()" class="btn btn-primary">Appliquer</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<style type="text/css">
+
+
+
+.recruiter-link {
+
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 155px;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+    transition: 1s;
+
+}
+
+.recruiter-link {
+
+    display: block;
+    height: 349px;
+    width: 260px;
+    right: -260px;
+
+}
+.recruiter-link, .recruiter-link .recruiter-link-tab {
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+.recruiter-link .recruiter-link-tab {
+
+    margin-left: -30px;
+    width: 30px;
+
+}
+.recruiter-link .recruiter-link-tab {
+
+    margin-left: -24px;
+    width: 24px;
+
+}
+.recruiter-link .recruiter-link-tab {
+
+    background-color: #f4f4f4;
+    float: left;
+    position: relative;
+    border-top: 1px solid #f4f4f4;
+    cursor: pointer;
+
+}
+.recruiter-link, .recruiter-link .recruiter-link-tab {
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+.recruiter-link .recruiter-link-tab img {
+
+    margin: 46.5px 6px;
+    width: 19px;
+    height: 90px;
+
+}
+
+#recuiting{
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  font-style:bold;
+  font-size:18px;
+  color:#383535;
+  text-align:center;
+  width: 19px;
+  height: 180px;
+  text-decoration:none;
+}
+</style>
+
+<script type="text/javascript">
+        jQuery(document).ready(function() {
+            $(".uniform").uniform();
+
+            $('#tags_1').tagsInput({
+                width: 'auto',
+                defaultText:'',
+            })
+            $('#selectitem4,#selectitem5').select2({
+                placeholder: "Select an option",
+                allowClear: true
+            });
+
+            
+        });
+
+
+        function applynewsletter(){
+            var email=$('#newsletter [name=email]').val();
+            //$.get("index.php?newsletter="+email);
+
+            $('#newsletetrmod').modal();
+            $('#newsletter_email').val(email);
+
+//            $('#newsletter [name=email]').val("");
+//            toastr.success("Email successfully added for newsletter.");
+            return false;
+        }
+
+        $(function(){
+            $('.selectpicker').selectpicker();
+        });
+
+    </script>
+    </body>
+
+<!-- END BODY -->
+
 </html>
